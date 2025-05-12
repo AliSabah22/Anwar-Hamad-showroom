@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Anwar Hamad Art Showroom
+
+A modern, elegant online showroom website for showcasing and selling artwork. Built with Next.js and Tailwind CSS.
+
+## Features
+
+- Responsive design optimized for all devices
+- Full-screen hero section with featured artwork
+- Gallery page showcasing past works
+- Shop page with available artwork for purchase
+- About page with artist biography and exhibitions
+- Contact form for inquiries and commission requests
+- Clean, minimalist design that highlights the artwork
+- SEO optimized
+- Fast performance with Next.js
+
+## Tech Stack
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- React
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── about/
+│   ├── contact/
+│   ├── gallery/
+│   ├── shop/
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+└── styles/
+public/
+└── images/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Customization
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Replace placeholder images in the `public` directory with actual artwork images
+2. Update content in each page component to match the artist's information
+3. Modify the color scheme in `tailwind.config.js` if needed
+4. Add your own meta tags and SEO information in `layout.tsx`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+The site can be deployed to any platform that supports Next.js applications, such as Vercel, Netlify, or AWS Amplify.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
