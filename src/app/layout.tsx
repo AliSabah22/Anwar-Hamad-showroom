@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import StarBackground from './components/StarBackground';
+import React from 'react';
+import Navigation from './components/Navigation';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,26 +31,7 @@ export default function RootLayout({
           radius={4}
         />
         <div className="relative z-10">
-          <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b-2 border-[#D1CAA1]">
-            <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
-              <div className="flex justify-between h-12">
-                <div className="flex items-center">
-                  <a href="/" className="text-xl font-semibold text-[#2C3E50]">Anwar Hamad</a>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <a href="/gallery" className="text-[#190B28] hover:text-[#B4A7D6] transition-colors">Gallery</a>
-                  <a href="/shop" className="text-[#190B28] hover:text-[#B4A7D6] transition-colors">Shop</a>
-                  <a href="/about" className="text-[#190B28] hover:text-[#B4A7D6] transition-colors">About</a>
-                  <a href="/contact" className="text-[#190B28] hover:text-[#B4A7D6] transition-colors">Contact</a>
-                  <select className="ml-4 px-2 py-1 rounded bg-[#D1CAA1] text-[#190B28] border border-[#B4A7D6] focus:outline-none focus:ring-2 focus:ring-[#B4A7D6]" defaultValue="en">
-                    <option value="en">English</option>
-                    <option value="ar">العربية</option>
-                    <option value="fr">Français</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </nav>
+          <Navigation />
           <main className="pt-12">
             {children}
           </main>
